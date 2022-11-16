@@ -2,10 +2,9 @@
 
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
+import AppBlueMenu from './components/AppBlueMenu.vue';
 import AppFooterTop from './components/AppFooterTop.vue';
 import AppFooterBottom from './components/AppFooterBottom.vue';
-import AppBlueMenu from './components/AppBlueMenu.vue';
-import ComicCard from './components/ComicCard.vue';
 
 export default {
   name: 'App',
@@ -15,7 +14,6 @@ export default {
     AppBlueMenu,
     AppFooterTop,
     AppFooterBottom,
-    ComicCard,
   },
 
 }
@@ -24,11 +22,9 @@ export default {
 <template>
   <AppHeader/>
   <AppMain/>
-  <AppBlueMenu />
+  <AppBlueMenu/>
   <AppFooterTop/>
-  <AppFooterBottom/>
-  <!-- <ComicCard :card=""/> -->
-  
+  <AppFooterBottom/>  
 </template>
 
 <style lang="scss">

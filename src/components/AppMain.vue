@@ -1,29 +1,29 @@
 <script>
 import ComicCard from './ComicCard.vue';
-import comics from '../data/comics';
+import cards from '../data/comics';
 
 export default {
   name: 'AppMain',
   components:{
-    ComicCard
+    ComicCard,
   },
   data(){
     return{
-      comics
+      cards,
     }
   }
+};
 
-}
 </script>
 
 <template>
   <main>
-    <div class="content cards">
+    <div class="content">
+      
       <ComicCard
-      v-for="(comic, index) in comics"
+      v-for="(card, index) in cards"
       :key="index"
-      :image="comic.thumb"
-      :title="comic.series"
+      :card="card"
       />
       
     </div>
@@ -32,6 +32,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixin" as *;
+
   main{
     // margin: 0 20px;
     padding: 50px;
@@ -39,11 +42,9 @@ export default {
     background-color: black;
     color: white;
     font-size: 50px;
-    .cards{
-      display: flex;
-      flex-wrap: wrap;
-
-
+      .content {
+        display: flex;
+        flex-wrap: wrap;
     }
   }
 
