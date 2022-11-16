@@ -68,7 +68,7 @@ export default {
         </div>
       </div>
     </div>
-    <img src="../assets/img/dc-logo-bg.png" alt="">
+    <!-- <img src="../assets/img/dc-logo-bg.png" alt=""> -->
   </footer>
   
 </template>
@@ -81,18 +81,15 @@ export default {
 footer{
   display: flex;
   background-image: url('../assets/img/footer-bg.jpg');
-  padding-top: 30px;
-  // width: 50%;
-  overflow-y:hidden;
-  img{
-    max-width: 30%;
-    transform: translateY(-24%);
-    margin-right: 200px;
-  } 
+  background-size: cover;
   .container{
     display: flex;
-    // display: flex;
+    height: 370px;
+    background-image: url('../assets/img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
     .cols{
+      padding-top: 30px;
       margin-left: 50px;
       h4{
       color: white;
@@ -106,13 +103,12 @@ footer{
         a{
           display: inline-block;
           text-decoration: none;
-          color: #6B6558;
+          color: $secondary-color;
           font-size: .85em;
         }
       }
     }
   }
-  
   
 }
 
