@@ -34,7 +34,7 @@ export default {
     height: 150px;
     object-fit: cover;
     object-position: top;
-    transition: 0.4s all;
+    transition: 0.5s all;
   }
   h4 {
     color: white;
@@ -50,7 +50,7 @@ export default {
     top: 30%;
     left: 25%;
     opacity: 0;
-    transition: 0.4s all;
+    transition: 0.8s all;
     color: white;
     text-transform: uppercase;
     font-weight: 600;

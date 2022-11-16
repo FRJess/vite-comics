@@ -51,7 +51,7 @@ export default {
         text-align: center;
         color: white;
         text-transform: uppercase;
-        padding: 7px 8px;
+        padding: 8px;
         background-color: $dc-color;
         border: 1px solid $primary-color;
       }
@@ -68,16 +68,8 @@ export default {
       button{
         margin: 0 auto;
         display: block;
-        border: 0;
-        font-weight: 600;
-        color: white;
-        text-transform: uppercase;
-        background-color: $dc-color;
-        cursor: pointer;
-        padding: 8px 45px;
-        &:hover{
-            background-color: darken($dc-color, 10%);
-        }
+        @include button();
+
 
       }
 
