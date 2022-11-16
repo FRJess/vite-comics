@@ -1,61 +1,11 @@
 <script>
+import menu from '../data/menu';
+
 export default {
   name: 'AppHeader',
   data(){
-    return{
-      menu:[
-        {
-          text: 'Characters',
-          href: '#',
-          current: false,
-        },
-        {
-          text: 'Comics',
-          href: '#',
-          current: true,
-        },
-        {
-          text: 'Movies',
-          href: '#',
-          current: false,
-        },
-        {
-          text: 'TV',
-          href: '#',
-          current: false,
-        },
-        {
-          text: 'Games',
-          href: '#',
-          current: false,
-        },
-        {
-          text: 'Collectibles',
-          href: '#',
-          current: false,
-        },
-        {
-          text: 'Videos',
-          href: '#',
-          current: false,
-        },
-        {
-          text: 'Fans',
-          href: '#',
-          current: false,
-        },
-        {
-          text: 'News',
-          href: '#',
-          current: false,
-        },
-        {
-          text: 'Shop',
-          href: '#',
-          current: false,
-        },
-    
-      ]
+    return {
+      menu
     }
   }
 }
