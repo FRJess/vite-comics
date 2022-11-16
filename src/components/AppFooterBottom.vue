@@ -6,20 +6,26 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <div>
-      <button>Sign-up now</button>
+  <footer>
+
+    <div class="container">
+      <div>
+        <button>Sign-up now</button>
+      </div>
     </div>
-  </div>
   
+  </footer>
+
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/mixin' as *;
 @use '../styles/partials/variables' as *;
-.container{
-  background-color: $secondary-color;
+footer{
+  background-color: $primary-color;
+  height: 200px;
 }
+
 
 </style>
 

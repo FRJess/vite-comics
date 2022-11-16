@@ -12,8 +12,8 @@ export default {
 
 <style lang="scss" scoped>
   main{
-    margin: 0 20px;
-    padding: 50px 0;
+    // margin: 0 20px;
+    padding: 50px;
     min-height: 500px;
     background-color: black;
     color: white;
