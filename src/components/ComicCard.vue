@@ -4,12 +4,11 @@ export default {
   props:{
     card: Object,
   }
-
-}
+};
 </script>
 
 <template>
-  
+
   <div class="card">
     <img :src="card.thumb" alt="card.series">
     <h4>{{card.series}}</h4>
@@ -19,6 +18,8 @@ export default {
 
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+
   .card {
   position: relative;
   width: calc(100% / 6);
@@ -34,7 +35,7 @@ export default {
   h4 {
     color: white;
     font-size: 0.85rem;
-    padding: 10px 0;
+    padding: 5px 0;
     vertical-align: middle;
     display: inline-block;
     text-transform: uppercase;
