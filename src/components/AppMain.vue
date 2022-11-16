@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-  <main> Content goes here</main>
+  <main> --&gt; Content goes here &lt;-- </main>
   
 </template>
 
@@ -16,7 +16,8 @@ export default {
     padding: 50px 0;
     min-height: 500px;
     background-color: black;
-    color: white
+    color: white;
+    font-size: 50px;
   }
 
 </style>
