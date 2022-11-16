@@ -86,26 +86,40 @@ export default {
 @use '../styles/partials/variables' as *;
 
 header{
-  height: 180px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   text-align: center;
   .logo{
     margin: auto 0;
+    @include centerFlex('vertical');
+    img{
+      height: 90px;
+    }
   }
   nav{
     margin: auto 0;
     ul{
-      margin-top: 20px;
+      height: 100%;
       list-style-type: none;
       @include centerFlex('horizontal');
+      li{
+        @include centerFlex('vertical');
+        height: 100%;
+        padding-top: 60px;
+      }
       a{
+        height: 100%;
         text-decoration: none;
         display: inline-block;
         padding: 1rem;
         color: #464646;
         text-transform: uppercase;
         font-weight: 600;
+          &:hover,
+          &.active{
+          border-bottom: 7px solid $dc-color;
+          }
       }
   
     }
