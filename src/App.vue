@@ -27,7 +27,7 @@ export default {
   <AppBlueMenu />
   <AppFooterTop/>
   <AppFooterBottom/>
-  <ComicCard/>
+  <!-- <ComicCard :card=""/> -->
   
 </template>
 

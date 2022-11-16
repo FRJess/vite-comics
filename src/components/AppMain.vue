@@ -1,12 +1,33 @@
 <script>
+import ComicCard from './ComicCard.vue';
+import comics from '../data/comics';
+
 export default {
   name: 'AppMain',
+  components:{
+    ComicCard
+  },
+  data(){
+    return{
+      comics
+    }
+  }
 
 }
 </script>
 
 <template>
-  <main> --&gt; Content goes here &lt;-- </main>
+  <main>
+    <div class="content cards">
+      <ComicCard
+      v-for="(comic, index) in comics"
+      :key="index"
+      :image="comic.thumb"
+      :title="comic.series"
+      />
+      
+    </div>
+  </main>
   
 </template>
 
@@ -18,6 +39,12 @@ export default {
     background-color: black;
     color: white;
     font-size: 50px;
+    .cards{
+      display: flex;
+      flex-wrap: wrap;
+
+
+    }
   }
 
 </style>
