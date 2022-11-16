@@ -98,7 +98,6 @@ header{
     }
   }
   nav{
-    // margin: auto 0;
     ul{
       height: 100%;
       list-style-type: none;
