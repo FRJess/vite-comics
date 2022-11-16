@@ -18,6 +18,10 @@ export default {
 
 <template>
   <main>
+    <div class="jumbotron">
+      <img src="../assets/img/jumbotron.jpg" alt="jumbotron" />
+    </div>
+    <h2 class>Current series</h2>
     <div class="content">
       
       <ComicCard
@@ -27,6 +31,7 @@ export default {
       />
       
     </div>
+    <button>Load more</button>
   </main>
   
 </template>
@@ -36,16 +41,46 @@ export default {
 @use "../styles/partials/mixin" as *;
 
   main{
-    // margin: 0 20px;
-    padding: 50px;
-    min-height: 500px;
-    background-color: black;
+    padding-bottom: 10px;
+    background-color: $primary-color;
     color: white;
-    font-size: 50px;
+      h2 {
+        width: 215px;
+        transform: translateY(-50%);
+        margin-left: 15%;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        padding: 7px 8px;
+        background-color: $dc-color;
+        border: 1px solid $primary-color;
+      }
+      .jumbotron img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
       .content {
         display: flex;
         flex-wrap: wrap;
-    }
+      }
+      button{
+        margin: 0 auto;
+        display: block;
+        border: 0;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        background-color: $dc-color;
+        cursor: pointer;
+        padding: 8px 45px;
+        &:hover{
+            background-color: darken($dc-color, 10%);
+        }
+
+      }
+
   }
 
 </style>
