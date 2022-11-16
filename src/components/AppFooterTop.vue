@@ -90,8 +90,8 @@ footer{
       padding-top: 30px;
       margin-left: 50px;
       h4{
-      color: white;
-      text-transform: uppercase;
+      color: $white;
+      text-transform: $text-upper;
       font-weight: 600;
       margin-bottom: 10px;
     }

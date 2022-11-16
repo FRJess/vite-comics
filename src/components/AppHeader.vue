@@ -87,9 +87,8 @@ export default {
 
 header{
   line-height: 120px;
-  display: flex;
+  @include centerFlex('vertical');
   justify-content: space-between;
-  align-items: center;
   .logo{
     @include centerFlex('vertical');
     img{
@@ -110,7 +109,7 @@ header{
       a{
         text-decoration: none;
         color: $primary-color;
-        text-transform: uppercase;
+        text-transform: $text-upper;
         &:hover {
           color: $dc-color;
         }

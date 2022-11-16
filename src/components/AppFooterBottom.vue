@@ -29,17 +29,16 @@ footer {
   height: 110px;
   background-color: lighten($primary-color, 8%);
   .content {
-    display: flex;
+    @include centerFlex('vertical');
     justify-content: space-between;
     height: 100%;
-    align-items: center;
     & > h4 {
       margin-left: 40px;
       padding: 13px;
       border: 2px solid $dc-color;
-      color: white;
+      color: $white;
       cursor: pointer;
-      text-transform: uppercase;
+      text-transform: $text-upper;
     }
     .follow-us {
       display: flex;
@@ -52,7 +51,7 @@ footer {
         margin-right: 30px;
         padding-top: 5px;
         font-size: 1.1rem;
-        text-transform: uppercase;
+        text-transform: $text-upper;
         font-weight: 600;
       }
     }

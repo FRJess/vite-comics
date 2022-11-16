@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
+@use "../styles/partials/mixin" as *;
 
   .card {
   position: relative;
@@ -32,17 +33,16 @@ export default {
   img {
     width: 150px;
     height: 150px;
-    object-fit: cover;
-    object-position: top;
+    @include image-position();
     transition: 0.5s all;
   }
   h4 {
-    color: white;
+    color: $white;
     font-size: 0.85rem;
     padding: 5px 0;
     vertical-align: middle;
     display: inline-block;
-    text-transform: uppercase;
+    text-transform: $text-upper;
   }
   p {
     text-align: center;
@@ -51,8 +51,8 @@ export default {
     left: 25%;
     opacity: 0;
     transition: 0.8s all;
-    color: white;
-    text-transform: uppercase;
+    color: $white;
+    text-transform: $text-upper;
     font-weight: 600;
     font-size: 0.9rem;
   }

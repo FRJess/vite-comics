@@ -60,16 +60,15 @@ export default {
       justify-content: space-between;
       @include centerFlex('horizontal');
       li {
-        display: flex;
-        align-items: center;
+        @include centerFlex('vertical');
         img {
           transform: scale(0.5);
         }
         a {
           text-decoration: none;
-          color: white;
+          color: $white;
           font-size: 0.9rem;
-          text-transform: uppercase;
+          text-transform: $text-upper;
         }
       }
     }

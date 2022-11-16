@@ -43,14 +43,14 @@ export default {
   main{
     padding-bottom: 10px;
     background-color: $primary-color;
-    color: white;
+    color: $white;
       h2 {
         width: 215px;
         transform: translateY(-50%);
         margin-left: 6%;
         text-align: center;
-        color: white;
-        text-transform: uppercase;
+        color: $white;
+        text-transform: $text-upper;
         padding: 8px;
         background-color: $dc-color;
         border: 1px solid $primary-color;
@@ -58,12 +58,10 @@ export default {
       .jumbotron img {
         height: 400px;
         width: 100%;
-        object-fit: cover;
-        object-position: top;
+        @include image-position();
       }
       .content {
-        display: flex;
-        flex-wrap: wrap;
+        @include centerFlex('wrap');
       }
       button{
         margin: 0 auto;
