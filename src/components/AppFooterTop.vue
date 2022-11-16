@@ -86,7 +86,7 @@ footer{
   overflow-y:hidden;
   img{
     max-width: 30%;
-    transform: translateY(-28%);
+    transform: translateY(-24%);
     margin-right: 200px;
   } 
   .container{

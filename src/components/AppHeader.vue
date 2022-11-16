@@ -62,10 +62,10 @@ export default {
 </script>
 
 <template>
-  <header>
+  <header class="container">
 
     <div class="logo">
-      <img src="../assets/img/dc-logo.png" alt="">
+      <img src="../assets/img/dc-logo.png" alt="Logo DC">
     </div>
 
     <nav>
@@ -86,28 +86,29 @@ export default {
 @use '../styles/partials/variables' as *;
 
 header{
-  width: 60%;
+  height: 180px;
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: auto;
   .logo{
-    margin-top: 20px;
-    margin-right: 100px;
+    margin: auto 0;
   }
-  ul{
-    margin-top: 20px;
-    list-style-type: none;
-    @include centerFlex('horizontal');
-    a{
-      text-decoration: none;
-      display: inline-block;
-      padding: 1rem;
-      color: #464646;
-      text-transform: uppercase;
-      font-weight: 600;
+  nav{
+    margin: auto 0;
+    ul{
+      margin-top: 20px;
+      list-style-type: none;
+      @include centerFlex('horizontal');
+      a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 1rem;
+        color: #464646;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+  
     }
-
   }
 }
 
