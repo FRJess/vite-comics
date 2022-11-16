@@ -62,7 +62,7 @@ export default {
 </script>
 
 <template>
-  <header class="container">
+  <header class="content">
 
     <div class="logo">
       <img src="../assets/img/dc-logo.png" alt="Logo DC">
@@ -86,40 +86,39 @@ export default {
 @use '../styles/partials/variables' as *;
 
 header{
-  height: 120px;
+  line-height: 120px;
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
   .logo{
-    margin: auto 0;
     @include centerFlex('vertical');
     img{
       height: 90px;
+      cursor: pointer;
     }
   }
   nav{
-    margin: auto 0;
+    // margin: auto 0;
     ul{
       height: 100%;
       list-style-type: none;
-      @include centerFlex('horizontal');
+      margin: 0 auto;
+      @include centerFlex('both');
       li{
+        margin: 0 10px 0 10px;
         @include centerFlex('vertical');
-        height: 100%;
-        padding-top: 60px;
       }
       a{
-        height: 100%;
         text-decoration: none;
-        display: inline-block;
-        padding: 1rem;
-        color: #464646;
+        color: $primary-color;
         text-transform: uppercase;
-        font-weight: 600;
-          &:hover,
-          &.active{
-          border-bottom: 7px solid $dc-color;
-          }
+        &:hover {
+          color: $dc-color;
+        }
+        &.active {
+          color: $dc-color;
+          box-shadow: inset 0 -7px 0 $dc-color;
+        }
       }
   
     }
