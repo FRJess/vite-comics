@@ -38,9 +38,9 @@ export default {
 @use "../styles/partials/mixin" as *;
 .menu-box {
   background-color: $dc-color;
+  overflow-y: auto;
   .content {
     ul {
-      justify-content: space-between;
       @include centerFlex('horizontal');
       li {
         @include centerFlex('vertical');
