@@ -47,7 +47,7 @@ export default {
       h2 {
         width: 215px;
         transform: translateY(-50%);
-        margin-left: 15%;
+        margin-left: 6%;
         text-align: center;
         color: white;
         text-transform: uppercase;
