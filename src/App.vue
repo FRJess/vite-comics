@@ -4,12 +4,14 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooterTop from './components/AppFooterTop.vue';
 import AppFooterBottom from './components/AppFooterBottom.vue';
+import AppBlueMenu from "./components/AppBlueMenu.vue";
 
 export default {
   name: 'App',
   components: {
     AppHeader,
     AppMain,
+    AppBlueMenu,
     AppFooterTop,
     AppFooterBottom,
   },
@@ -20,6 +22,7 @@ export default {
 <template>
   <AppHeader/>
   <AppMain/>
+  <AppBlueMenu />
   <AppFooterTop/>
   <AppFooterBottom/>
   
