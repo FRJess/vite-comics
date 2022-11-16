@@ -1,5 +1,4 @@
 <script>
-// footer follow us
 export default {
   name: "AppFooterBottom",
 };

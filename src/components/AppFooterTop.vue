@@ -68,9 +68,7 @@ export default {
         </div>
       </div>
     </div>
-    <!-- <img src="../assets/img/dc-logo-bg.png" alt=""> -->
   </footer>
-  
 </template>
 
 <style lang="scss" scoped>
