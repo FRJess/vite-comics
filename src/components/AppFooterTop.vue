@@ -7,7 +7,7 @@ export default {
 
 <template>
   <footer>
-    <div class="container">
+    <div class="content">
       <div class="cols">
         <div class="links">
           <h4>DC Comics</h4>
@@ -82,7 +82,7 @@ footer{
   display: flex;
   background-image: url('../assets/img/footer-bg.jpg');
   background-size: cover;
-  .container{
+  .content{
     display: flex;
     height: 370px;
     background-image: url('../assets/img/dc-logo-bg.png');
@@ -103,7 +103,7 @@ footer{
         a{
           display: inline-block;
           text-decoration: none;
-          color: $secondary-color;
+          color: lighten($primary-color, 30%);
           font-size: .85em;
         }
       }
