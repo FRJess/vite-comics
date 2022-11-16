@@ -1,33 +1,14 @@
 <script>
+import menu from '../data/blue-menu.js';
 
 export default {
-  name: "AppBlueMenu",
-  data() {
+  name: 'AppBlueMenu',
+  data(){
     return {
-      menu: [
-        {
-          img: "buy-comics-digital-comics.png",
-          text: "digital comics",
-        },
-        {
-          img: "buy-comics-merchandise.png",
-          text: "dc merchandise",
-        },
-        {
-          img: "buy-comics-subscriptions.png",
-          text: "subscriptions",
-        },
-        {
-          img: "buy-comics-shop-locator.png",
-          text: "comic shop locator",
-        },
-        {
-          img: "buy-dc-power-visa.svg",
-          text: "dc power visa",
-        },
-      ],
-    };
+      menu,
+    }
   },
+
   methods: {
     getPathImage(imageName) {
       return new URL(`../assets/img/${imageName}`, import.meta.url).href;
@@ -40,7 +21,9 @@ export default {
   <div class="menu-box">
     <div class="content">
       <ul>
-        <li v-for="(link, index) in menu" :key="index">
+        <li 
+        v-for="(link, index) in menu" 
+        :key="index">
           <img :src="getPathImage(link.img)" :alt="link.text" />
           <a href="#">{{ link.text }}</a>
         </li>
