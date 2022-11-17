@@ -54,6 +54,7 @@ export default {
         padding: 8px;
         background-color: $dc-color;
         border: 1px solid $primary-color;
+        cursor: pointer;
       }
       .jumbotron img {
         height: 400px;

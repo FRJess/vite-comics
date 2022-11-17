@@ -53,6 +53,7 @@ footer {
         font-size: 1.1rem;
         text-transform: $text-upper;
         font-weight: 600;
+        cursor: pointer;
       }
     }
   }
